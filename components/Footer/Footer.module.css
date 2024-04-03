@@ -1,0 +1,50 @@
+.footerContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    bottom: -15vw;
+}
+
+.footerContent {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0%;
+}
+
+.footerContent li {
+    margin: 20%;
+    min-width: fit-content;
+}
+
+/*tablet*/
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .footerContainer {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        top: 140vw;
+    }
+    .footerContent {
+        max-width: 100%;
+    }
+    .footerContent li {
+        margin: 15%;
+    }
+    .footerContent .listText {
+        max-width: 1vw;
+    }
+}
+
+

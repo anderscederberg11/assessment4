@@ -1,0 +1,36 @@
+.contactTitle {
+    font-size: var(--font-h2);
+    max-width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    padding-left: 30%;
+}
+
+/*tablet*/
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -30vw;
+        padding: 0%;
+        width: 100vw;
+    }
+    .contactMain{
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0%;
+        
+    }
+    .contactTitle {
+        font-size: var(--font-h2);
+        max-width: 100%;
+        height: auto;
+        margin-top: 12%;
+        margin-bottom: 0%;
+        padding-left: 15%;
+    }
+}
+

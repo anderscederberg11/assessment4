@@ -1,0 +1,69 @@
+.headerContainer {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerList {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 3vw;
+}
+
+.headerList li {
+    margin-right: 3vw;
+}
+
+.headerList .menuBar {
+    margin-left: 60vw;
+}
+
+.listHomeActive,
+.listAboutActive,
+.listContactActive {
+    border-bottom: 3px solid var(--yellow); 
+}
+
+/*tablet*/
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .headerContainer{
+        padding-left: 11vw;
+        padding-top: 2vw;
+    }
+    .headerList li {
+        margin-left: 3vw;
+    }
+    .headerList li:nth-child(4) {
+        min-width: fit-content;
+        
+    }
+    .headerList .menuBar {
+        margin-left: 10vw;
+    }
+}
+
+/*iphone XR*/
+
+@media (max-width: 700px) {
+    .headerContainer{
+        display: flex;
+    }
+    .headerList li:nth-child(n+2):nth-child(-n+4) {
+        display: none;
+    }
+    .headerList .menuBar{
+        margin-left: 40vw;
+    }
+ 
+}
+
+

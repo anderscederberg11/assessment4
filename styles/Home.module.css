@@ -1,0 +1,207 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 20vh;
+  padding: 0%;
+}
+
+.containerOne {
+  max-width: 100%;
+  width: 100vw;
+  height: fit-content;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  right: -0.5vw;
+  z-index: 0;
+  padding: 0%;
+}
+
+.homeTitle {
+  font-size: var(--font-h2);
+  max-width: 100%;
+  height: auto;
+  margin: 0%;
+  z-index: 1;
+  position: relative;
+  top: 6vw;
+  left: 17.6vw;
+}
+
+.homeBody {
+  margin: 0%;
+  max-width: 18%;
+  padding: 0%;
+  text-align: right;
+  font-size: var(--font-regular);
+  position: relative;
+  left: 20vw;
+  top: 8vw
+}
+
+.bcitCampus {
+  margin: 0%;
+  position: relative;
+  max-width: 100%;
+  width: 60vw;
+  top: -6vw;
+  left: 34vw;
+
+}
+
+.aboutButton {
+  border: 3px solid var(--yellow);
+  background-color: transparent;
+  position: relative;
+  left: 14vw;
+  bottom: 15vw;
+  width: 5vw;
+  height: 2.5vw;
+  font-weight: 50;
+  z-index: 4;
+}
+
+.aboutButton:hover {
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+
+.containerTwo {
+  max-width: fit-content;
+  height: auto;
+  margin-bottom: 20vw;
+  margin-top: 0%;
+}
+
+.application {
+  font-size: var(--font-medium);
+  position: relative;
+  top: -5.5vw;
+  left: -5vw;
+  z-index: 1;
+}
+
+.studentsWalking {
+  transform: scaleX(-1);
+  position: relative;
+  left: -16vw;
+  top: -8.2vw;
+  z-index: 0;
+}
+
+.studying {
+  position: relative;
+  right: -23vw;
+  top: -8vw;
+}
+
+.tuitionText {
+  font-size: var(--font-regular);
+  text-align: right;
+  position: relative;
+  top: -17vw;
+  right: -17.5vw;
+}
+/*tablet*/
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .containerOne {
+    max-width: 100%;
+    height: fit-content;
+    margin-left: 0%;
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0vw;
+    padding: 0%;
+  }
+  .main {
+    padding: 0vw;
+  }
+  .bcitCampus {
+    max-width: 100vw;
+    height: 35vw;
+    bottom: 0vw;
+    z-index: 0;
+    margin-right: 0vw;
+    position: relative;
+    top: 30vw;
+  }
+  .homeBody {
+    z-index: 1;
+    text-align: left;
+    font-size: 1.3rem;
+    max-width: 49vw;
+    margin-top: 4vw;
+    margin-left: 7vw;
+  }
+  .homeTitle {
+    font-size: var(--font-h1-tablet);
+    max-width: 60vw;
+    height: auto;
+    font-weight: lighter;
+    margin-left: 5vw;
+
+  }
+  .containerTwo {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    height: auto;
+    margin-bottom: 0vw;
+    margin-top: 40%;
+  }
+
+  .aboutButton {
+    height: 6vw;
+    position: relative;
+    top: 14vw;
+    text-align: center;
+    width: 12vw;
+    left: -33vw;
+
+  }
+  .studentsWalking {
+    transform: none;
+    position: relative;
+    margin: 0%;
+    top: 1vw;
+    left: -20vw;
+    width: 40vw;
+    height: 40vw;
+  }
+  .application {
+    height: fit-content;
+    max-width: 100%;
+    font-size: var(--font-medium);
+    position: relative;
+    top: -2.5vw;
+    left: 59vw;
+    z-index: 1;
+  }
+  .studying {
+    position: relative;
+    align-self: flex-end;
+    right: -10%;
+    top: 0;
+    width: 12%;
+    height: fit-content;
+    margin-bottom: 2%;
+  }
+  .tuitionText {
+    max-width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    right: 4vw;
+    margin: 0%;
+    padding: 0%;
+    z-index: 3;
+  }
+  
+}
